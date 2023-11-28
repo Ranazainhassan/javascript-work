@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var database =[
+            {
+               username: "Muhammadzain",
+                password : "12345",
+            }
+          
+        ]
+
+        var needfeed=[
+        {
+                username: "MUhammad Haider",
+                password :321
+            },
+
+            {
+                username: "MUhammad Adeel",
+                password :54321
+            }
+        ]
+        var userNameprompt = prompt("Please Enter your name!");
+        var passwordprompt= prompt("Please Enter your password!");
+
+            function signin(user , pass){
+                if(user === database[0].username &&
+                 pass === database[0].password){
+                 alert(needfeed);
+                }else{
+                   alert(  "sorry put valid information");
+                }
+            }
+            signin(userNameprompt,passwordprompt);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
